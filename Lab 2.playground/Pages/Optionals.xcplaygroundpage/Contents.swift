@@ -84,11 +84,10 @@ let firstElement = optionalArray?[0]
 */
 /*:
 ## The Nil Coalescing Operator
-//:
-//: Sometimes we want to use a default value in the place of an optional when it turns out to be `nil`. For example, we might want to provide a placeholder name for an object when its own `name` property is `nil`, or use 0 if an integer is `nil`.
-//: (If you know Java, you may recognize this as similar to the "conditional", or "ternary" operator.)
+Sometimes we want to use a default value in the place of an optional when it turns out to be `nil`. For example, we might want to provide a placeholder name for an object when its own `name` property is `nil`, or use 0 if an integer is `nil`.
+(If you know Java, you may recognize this as similar to the "conditional", or "ternary" operator.)
 
-//: Swift provides a way to do this very compactly: the nil-coalescing operator (`??`). When the optional to the left of the operator has a value, that value becomes the value of the expression. When the optional is `nil`, the value of the expression is the value on the right of the operator. Let's look at an example:
+Swift provides a way to do this very compactly: the nil-coalescing operator (`??`). When the optional to the left of the operator has a value, that value becomes the value of the expression. When the optional is `nil`, the value of the expression is the value on the right of the operator. Let's look at an example:
 */
 let optionalString: String? = nil
 let petName = optionalString ?? "Fido"
