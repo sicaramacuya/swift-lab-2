@@ -70,11 +70,13 @@ if pet == "bunny" || pet == "puppy" {
 ### Conditionals and Functions
  We heard you're working on a new messaging app. Emojis are popular with your users. Everyone is using the happy face 😀. You're app wants to capitalize on this, you're a genius!
 */
- /*:
-  - experiment:
+
+/*:
+ - experiment:
  Write a function named stringToEmoji that takes a parameter word of type  String and returns a Character. If the word is "happy" return "😀" otherwise return "🤔".
 */
- /*:
+
+/*:
  Test your function like this:
  
  ```
