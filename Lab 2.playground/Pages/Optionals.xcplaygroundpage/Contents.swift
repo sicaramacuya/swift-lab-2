@@ -69,11 +69,10 @@ print(alwaysAString)
 In order to call methods on optionals, you must first give Swift something that is non-optional, either through an implicitly unwrapped optional or by force unwrapping the optional where the method is called. Calling a method directly on an optional is a compile-time error. Uncomment the following line to see:
 */
 //let intDescription = maybeAnInt.description // Value of optional type 'Int?' not unwrapped!
-
 /*:
  But we're programmers and we like working around the rules. You don't have to give Swift a non-optional if you use a technique called **optional chaining**. Chaining allows you to try to call a method on an optional, which calls the method if the optional has a value, and returns `nil` if it does not. Chaining is performed by placing a question mark between the variable name and the dot, parenthesis, or bracket that follows it:
 */
-let optionalArray: [Int]? = [ 1, 2, 3, 4 ]
+let optionalArray: [Int]? = nil
 let arrayLength = optionalArray?.count
 let firstElement = optionalArray?[0]
 /*:
@@ -97,9 +96,6 @@ let petName = optionalString ?? "Fido"
  
 In this Playground we have looked at some of the capabilities of optionals in Swift. Optionals are a fundamental part of Swift that allow us to be very clear about when variables contain values and when they do not. All of the rules associated with optionals can be confusing at first, but you will quickly gain an intuition by putting your knowledge into practice. The compiler will try to help you along the way, reminding you when you make mistakes.
  */
-
-
-
 
 /*:
 
@@ -129,12 +125,30 @@ In this Playground we have looked at some of the capabilities of optionals in Sw
 
 
 // Write your answers here:
+// 1.
+var username: String? = nil
 
+// 2.
+print(username)
 
+// 3.
+username = "Nilou"
 
+// 4.
+print(username)
 
+// 5.
+print(username!)
 
+// 6.
+if let username = username {
+    print(username)
+} else {
+    print("The optional 'username' does not contain any value")
+}
 
+// 7.
+var bestUser: String? = username ?? "Anonymous"
 
 
 
